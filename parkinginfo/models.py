@@ -32,6 +32,7 @@ class Parkinginfo(models.Model):
     lat = models.FloatField(blank=True, null=True)
     parkid = models.CharField(db_column='parkId', max_length=50, blank=True, null=True)  # Field name made lowercase.
     update_dt = models.DateTimeField(blank=True, null=True)
+    star = models.IntegerField(blank=True, null=True)
 
     class Meta:
         managed = False
